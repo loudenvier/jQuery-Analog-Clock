@@ -13,13 +13,10 @@
     <script type="text/javascript" src="jquery.analogclock-0.0.1.js"></script>
     <script type="text/javascript">
     $(document).ready( function() {
-      $("#analogClock1").AnalogClock ( {
-          skin: "modern", 
-          timeShift: 0 
-        } );
-      $("#analogClock2").AnalogClock ( { } );        
+      $("#analogClock1").AnalogClock ( { } ); // default = cyrstaldigits       
+      $("#analogClock2").AnalogClock ( { skin: "crystal" } );
       $("#analogClock3").AnalogClock ( { skin: "mac" } );        
-      $("#analogClock4").AnalogClock ( { skin: "crystal" } );        
+      $("#analogClock4").AnalogClock ( { skin: "modern" } );        
       $("#analogClock5").AnalogClock ( { skin: "modernlarge" } );        
       $("#analogClock6").AnalogClock ( { skin: "apple" } );        
     });
@@ -29,13 +26,32 @@
   <body>
 
     <h1>Felipe Machado's jQuery Analog Clock</h1>
-
-    <div id="analogClock1"></div>
-    <div id="analogClock2"></div>
-    <div id="analogClock3"></div>
-    <div id="analogClock4"></div>
-    <div id="analogClock5"></div>
-    <div id="analogClock6"></div>
+    <h2>A skinnable, small, jQuery-based, HTML compliant, even IE-compatible analog clock :-)</h2>
+    <p>Works on all major browsers including Opera, Safari, Firefox, Chrome and Internet Explorer</p>
+    <div class="clock">
+    	<div id="analogClock1"></div>
+    	<p>crystaldigits</p>
+    </div>
+    <div class="clock">
+    	<div id="analogClock2"></div>
+    	<p>crystal</p>
+    </div>
+    <div class="clock">
+    	<div id="analogClock3"></div>
+    	<p>mac</p>
+    </div>
+    <div class="clock">
+    	<div id="analogClock4"></div>
+    	<p>modern</p>
+    </div>
+    <div class="clock">
+    	<div id="analogClock5"></div>
+    	<p>modernlarge</p>
+    </div>
+    <div class="clock">
+    	<div id="analogClock6"></div>
+    	<p>apple</p>
+    </div>
 
   </body>
   

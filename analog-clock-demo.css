@@ -1,3 +1,6 @@
-.jquery-analog-clock {
+.clock {
   float:left;
+}
+.clock p {
+  text-align:center;
 }
