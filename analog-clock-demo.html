@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="PSPad editor, www.pspad.com" />
+    <title>
+      jQuery Analog Clock by Felipe Machado
+    </title>
+    <link href="analog-clock-demo.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.rotate.1-1.js"></script>
+    <script type="text/javascript" src="jquery.analogclock-0.0.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready( function() {
+      $("#analogClock1").AnalogClock ( {
+          skin: "modern", 
+          timeShift: 0 
+        } );
+      $("#analogClock2").AnalogClock ( { } );        
+      $("#analogClock3").AnalogClock ( { skin: "mac" } );        
+      $("#analogClock4").AnalogClock ( { skin: "crystal" } );        
+      $("#analogClock5").AnalogClock ( { skin: "modernlarge" } );        
+      $("#analogClock6").AnalogClock ( { skin: "apple" } );        
+    });
+    </script>
+  </head>
+  
+  <body>
+
+      	<div id="analogClock1"></div>
+    		<div id="analogClock2"></div>
+    		<div id="analogClock3"></div>
+    		<div id="analogClock4"></div>
+    		<div id="analogClock5"></div>
+    		<div id="analogClock6"></div>
+
+  </body>
+  
+</html>
