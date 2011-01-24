@@ -20,7 +20,7 @@ $.fn.AnalogClock = function(options) {
 	// creating the clock markup elements
 	var elementBasePath = (options.skinsPath + "/" + options.skin + "-").replace("//","/");
 	var elementsMarkup = 
-    '<img class="clockFace" src="' + elementBasePath + 'face.png" style="position: absolute;" />' +
+    '<img class="clockFace" src="' + elementBasePath + 'face.png" style="position: absolute; left:0; top:0; margin: 0; padding: 0;" />' +
     // we hide the hands because they're initially unpositioned!
     '<div class="clockElements" style="position:absolute; top:0; left:0; display:none;">' +
       '<img class="clockHourHand" src="' + elementBasePath + 'hour.png" />' +
